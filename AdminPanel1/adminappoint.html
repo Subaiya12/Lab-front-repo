@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment & Scheduling - Lab Master</title>
+  <link rel="stylesheet" href="./css/adminappoint.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Lab Master</h2>
+    <ul>
+      <li><a href="admindashboard.html">Dashboard</a></li>
+      <li><a href="managepatient.html">Manage Patient</a></li>
+      <li><a href="managestaff.html">Manage Staff</a></li>
+      <li><a href="Test.html">Test Management</a></li>
+      <li><a href="adminappoint.html" class="active">Appointment and Scheduling</a></li>
+      <li><a href="adminreport.html">Sample and Report Management</a></li>
+      <li><a href="billing.html">Billing and Payments</a></li>
+      <li><a href="inventory.html">Inventory Management</a></li>
+      <li><a href="notifications.html">Notification and Communication</a></li>
+      <li><a href="system.html">System</a></li>
+      <li><a href="index.html">Logout</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <header>
+      <h1>Appointment & Scheduling</h1>
+    </header>
+
+    <div class="dashboard-section">
+      <table>
+        <thead>
+          <tr>
+        <th>Patient</th>
+        <th>Test</th>
+        <th>Date</th>
+        <th>Paid</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+        </thead>
+        <tbody id="adminAppointmentList">
+          <!-- JS will populate appointments here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="./js/adminappoint.js"></script>
+</body>
+</html>

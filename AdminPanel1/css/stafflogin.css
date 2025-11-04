@@ -1,0 +1,224 @@
+/* Reset & basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6dd5fa, #2980b9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  padding: 20px;
+}
+
+/* Login & Registration Container */
+.login-container {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  width: 400px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.login-container h2 {
+  margin-bottom: 5px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+}
+
+.login-container h3 {
+  margin-bottom: 25px;
+  font-weight: 400;
+  color: #555;
+  font-size: 16px;
+}
+
+/* Forms */
+.form {
+  display: none;
+}
+
+.form.active {
+  display: block;
+}
+
+.form-group {
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+}
+
+.form-group small {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* Inputs & Selects */
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #2980b9;
+  box-shadow: 0 0 10px rgba(41, 128, 185, 0.3);
+}
+
+/* Custom Dropdown Checkbox */
+.dropdown-checkbox {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-selected {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-selected::after {
+  content: '▼';
+  font-size: 10px;
+  color: #666;
+}
+
+.dropdown-checkbox.active .dropdown-selected {
+  border-color: #2980b9;
+  box-shadow: 0 0 10px rgba(41, 128, 185, 0.3);
+}
+
+.dropdown-checkbox.active .dropdown-selected::after {
+  content: '▲';
+}
+
+.dropdown-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.dropdown-checkbox.active .dropdown-options {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.dropdown-options label {
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  font-weight: 400;
+}
+
+.dropdown-options label:hover {
+  background: #f0f8ff;
+}
+
+.dropdown-options input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+  accent-color: #2980b9;
+  cursor: pointer;
+}
+
+/* Notice */
+.notice {
+  font-size: 13px;
+  color: #c0392b;
+  background: #fdecea;
+  padding: 10px;
+  border-left: 4px solid #c0392b;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Buttons */
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #2980b9, #6dd5fa);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  background: linear-gradient(90deg, #2573a6, #5fc3f0);
+}
+
+/* Switch Text */
+.switch-text {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #555;
+}
+
+.switch-text a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #2980b9;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.switch-text a:hover {
+  color: #1c5980;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 420px) {
+  .login-container {
+    width: 100%;
+    padding: 30px 20px;
+  }
+}

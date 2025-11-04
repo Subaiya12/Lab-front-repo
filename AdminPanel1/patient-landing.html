@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LabMaster Patient Dashboard</title>
+  <link rel="stylesheet" href="./css/patient-landing.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🧪 LabMaster</div>
+    <nav>
+      <a href="patient-landing.html">Home</a>
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome, <span id="patientName"></span>!</h1>
+      <p>Manage your appointments, view reports, and book tests easily.</p>
+    
+    </div>
+    <div class="hero-image">
+      <img src="./images/patient.jpg" alt="Doctor" class="circular-image" />
+    </div>
+  </section>
+
+  <!-- Quick Links -->
+  <div class="quick-links">
+    <a href="patientbooking.html">🧾 Book Your Test</a>
+    <a href="myappoinment.html">📅 My Appointments</a>
+    <a href="download-report.html">📥 Download Reports</a>
+    <a href="payment.html">💳 Payment</a>
+  </div>
+
+  <!-- Floating Buttons -->
+  <div class="floating-buttons">
+    <button onclick="window.location.href='contact-support.html'">📞</button>
+    <button onclick="window.location.href='profile.html'">👤</button>
+    
+  </div>
+
+  
+  <script src="./js/patient-landing.js"></script>
+</body>
+</html>

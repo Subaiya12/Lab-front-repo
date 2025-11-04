@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: linear-gradient(#2c3e50, #124466, #6dd5fa);
+  color: #fff;
+  padding: 20px;
+
+  /* Make it scrollable */
+  height: 100vh;        /* Full height of viewport */
+  overflow-y: auto;     /* Enable vertical scroll when content overflows */
+  position: sticky;     /* Stick in place while scrolling main content */
+  top: 0;               /* Required for sticky to work */
+}
+
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+ background-color: rgba(255,255,255,0.2);;
+}
+
+/* ==============================
+   Main Content
+================================= */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background: #f4f6f8;
+}
+.main-content header {
+  margin-bottom: 30px;
+}
+
+.main-content h1 {
+  font-size: 28px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* ==============================
+   Dashboard Section (Table)
+================================= */
+.dashboard-section {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.dashboard-section h2 {
+  color: #764ba2;
+  margin-bottom: 1.5rem;
+  font-size: 20px;
+}
+
+/* Table Styling */
+.dashboard-section table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.dashboard-section th, 
+.dashboard-section td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.dashboard-section th {
+  background: linear-gradient(#2c3e50, #124466, #6dd5fa);
+  color: #fff;
+  font-weight: 600;
+}
+
+.dashboard-section tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* ==============================
+   Inputs & Buttons
+================================= */
+.dashboard-section select {
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.dashboard-section button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.dashboard-section button:hover {
+  background-color: #c0392b;
+}
+
+/* ==============================
+   Responsive Design
+================================= */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 180px;
+  }
+
+  .main-content {
+    margin-left: 180px;
+    padding: 20px;
+  }
+
+  .dashboard-section {
+    padding: 20px;
+  }
+}

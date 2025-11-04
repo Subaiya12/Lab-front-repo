@@ -1,0 +1,204 @@
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0d6efd;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+  color: #ffdd57;
+}
+
+/* Highlight Login button */
+.navbar .login-btn {
+  background-color: #ffdd57;
+  color: #0d6efd;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.navbar .login-btn:hover {
+  background-color: #ffc107;
+  transform: scale(1.05);
+  color: #0d6efd;
+}
+
+/* Hero Section (only for landing page) */
+.hero {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background: linear-gradient(to right, #e6f0ff, #ffffff);
+}
+
+.hero-text h1 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.hero-image img {
+  max-width: 350px;
+  border-radius: 12px;
+}
+
+/* Quick Links */
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+}
+
+.quick-links a {
+  background-color: #0d6efd;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.quick-links a:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+/* Page Content (for services, about, contact pages) */
+.page-content {
+  margin-top: 120px;
+  padding: 40px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.page-content h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #004aad;
+}
+
+.page-content p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.page-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.page-content ul li {
+  background: #e6f0ff;
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Contact form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  width: 150px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #004aad;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #003580;
+}
+.circular-image {
+  width: 250px;          /* width of the circle */
+  height: 250px;         /* must match width */
+  border-radius: 50%;    /* makes it circular */
+  object-fit: cover;     /* keeps image proportion without stretching */
+  border: 3px solid #0052cc; /* optional colored border */
+}
+.get-started-btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #ffdd57;  /* matches your login button */
+  color: #0d6efd;             /* readable contrast */
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1); /* subtle depth */
+}
+
+.get-started-btn:hover {
+  background-color: #ffc107;
+  transform: scale(1.05);
+}

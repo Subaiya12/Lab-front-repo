@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Login - LabMaster</title>
+  <link rel="stylesheet" href="./css/stafflogin.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Lab Master</h2>
+    <h3 id="formTitle">Staff Panel - Login</h3>
+
+    <!-- LOGIN FORM -->
+    <form id="staffLoginForm" class="form active">
+      <div class="form-group">
+        <label for="staffUsername">Username</label>
+        <input type="text" id="staffUsername" placeholder="Enter Username" required>
+      </div>
+      <div class="form-group">
+        <label for="staffPassword">Password</label>
+        <input type="password" id="staffPassword" placeholder="Enter Password" required>
+      </div>
+      <button type="submit" class="login-btn">Login</button>
+      <p class="switch-text">Don't have an account?
+        <a id="showRegister">Register here</a>
+      </p>
+    </form>
+
+    <!-- REGISTRATION FORM -->
+    <form id="staffRegisterForm" class="form">
+      <div class="form-group">
+        <label for="newUsername">Username</label>
+        <input type="text" id="newUsername" placeholder="Choose Username" required>
+      </div>
+      <div class="form-group">
+        <label for="newEmail">Email</label>
+        <input type="email" id="newEmail" placeholder="Enter Email" required>
+      </div>
+      <div class="form-group">
+        <label for="newPassword">Password</label>
+        <input type="password" id="newPassword" placeholder="Choose Password" required>
+      </div>
+      <div class="form-group">
+        <label for="qualification">Qualification</label>
+        <select id="qualification" required>
+          <option value="">Select Qualification</option>
+          <option value="B.Sc in Medical Lab Technology">B.Sc in Medical Lab Technology</option>
+          <option value="Diploma in Lab Science">Diploma in Lab Science</option>
+          <option value="M.Sc in Biochemistry">M.Sc in Biochemistry</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="testsDropdown">Tests Staff is Qualified to Conduct</label>
+        <div class="dropdown-checkbox" id="testsDropdown">
+          <div class="dropdown-selected">Select Tests</div>
+          <div class="dropdown-options">
+            <label><input type="checkbox" value="Hematology"> Hematology</label>
+            <label><input type="checkbox" value="Biochemistry"> Biochemistry</label>
+            <label><input type="checkbox" value="Microbiology"> Microbiology</label>
+            <label><input type="checkbox" value="PCR / Molecular Diagnostics"> PCR / Molecular Diagnostics</label>
+            <label><input type="checkbox" value="Serology / ELISA"> Serology / ELISA</label>
+          </div>
+        </div>
+        <small>Click to select multiple tests</small>
+      </div>
+
+      <div class="form-group">
+        <label for="experience">Years of Experience</label>
+        <input type="number" id="experience" placeholder="Enter Years of Experience" min="0" required>
+      </div>
+      <p class="notice">Note: Your registration will require admin approval before you can log in.</p>
+      <button type="submit" class="login-btn">Register</button>
+      <p class="switch-text">Already have an account?
+        <a id="showLogin">Login here</a>
+      </p>
+    </form>
+  </div>
+
+  <script src="./js/stafflogin.js"></script>
+</body>
+</html>

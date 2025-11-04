@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LabMaster - Role Selection</title>
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+  <!-- Landing Page -->
+  <div id="landingPage" class="landing-container">
+    <div class="logo">
+      <h1>🧪 LabMaster</h1>
+      <p>Laboratory Management System</p>
+    </div>
+    <h2>Welcome to LabMaster</h2>
+    <p>Please select your role to continue:</p>
+    <div class="role-buttons">
+      <button class="role-btn patient" onclick="goToLogin('patient')">👤 Patient Portal</button>
+      <button class="role-btn staff" onclick="goToLogin('staff')">👨‍⚕️ Staff Login</button>
+      <button class="role-btn admin" onclick="goToLogin('admin')">👑 Admin Access</button>
+    </div>
+  </div>
+
+  <script src="./js/index.js"></script>
+</body>
+</html>

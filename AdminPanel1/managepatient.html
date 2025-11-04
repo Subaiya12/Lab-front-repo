@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Patients - LabMaster</title>
+  <link rel="stylesheet" href="./css/managepatient.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Lab Master</h2>
+    <ul>
+      <li><a href="admindashboard.html">Dashboard</a></li>
+      <li><a href="managepatient.html" class="active">Manage Patient</a></li>
+      <li><a href="managestaff.html">Manage Staff</a></li>
+      <li><a href="Test.html">Test Management</a></li>
+      <li><a href="adminappoint.html">Appointment & Scheduling</a></li>
+      <li><a href="reports.html">Sample & Report Management</a></li>
+      <li><a href="billing.html">Billing & Payments</a></li>
+      <li><a href="inventory.html">Inventory Management</a></li>
+      <li><a href="notifications.html">Notifications</a></li>
+      <li><a href="system.html">System</a></li>
+      <li><a href="index.html">Logout</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <h1>Manage Patients</h1>
+    </header>
+
+    <!-- Patients Table -->
+    <div class="table-container">
+      <h2>Registered Patients</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Full Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody id="patientList"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="./js/managepatient.js"></script>
+</body>
+</html>

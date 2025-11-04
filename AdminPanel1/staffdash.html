@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Dashboard - LabMaster</title>
+  <link rel="stylesheet" href="./css/staffdash.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>LabMaster</h2>
+      <ul>
+        <li><a href="staffdash.html" class="active">Dashboard</a></li>
+        <li><a href="staffpatient.html">Patients</a></li>
+        <li><a href="staffappointments.html">Appointments</a></li>
+        <li><a href="staffreport.html">Reports</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <section id="dashboardSection">
+        <h1 id="welcomeMessage">Welcome!</h1>
+        <div class="cards">
+          <div class="card">Patients Today: <span>0</span></div>
+          <div class="card">Pending Reports: <span>0</span></div>
+          <div class="card">Completed Tests: <span>0</span></div>
+          <div class="card">Revenue: <span>$0</span></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./js/staffdash.js"></script>
+</body>
+</html>

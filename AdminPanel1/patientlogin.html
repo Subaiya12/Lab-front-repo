@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Panel - LabMaster</title>
+  <link rel="stylesheet" href="./css/patientlogin.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Lab Master</h2>
+
+    <!-- LOGIN FORM -->
+    <form id="patientLoginForm" class="form active">
+      <h3>Patient Panel - Login</h3>
+      <div class="input-group">
+        <span class="icon">📧</span>
+        <input type="email" id="patientEmail" placeholder="Enter Email" required>
+      </div>
+      <div class="input-group">
+        <span class="icon">🔒</span>
+        <input type="password" id="patientPassword" placeholder="Enter Password" required>
+      </div>
+      <button type="submit" class="login-btn">Login</button>
+      <p class="switch-text">
+        Don’t have an account? <a href="#" id="showRegister">Register here</a>
+      </p>
+      <div id="loginMessage" class="message"></div>
+    </form>
+
+    <!-- REGISTRATION FORM -->
+    <form id="patientRegisterForm" class="form">
+      <h3>Patient Registration</h3>
+      <div class="input-group">
+        <span class="icon">📝</span>
+        <input type="text" id="newName" placeholder="Full Name" required>
+      </div>
+      <div class="input-group">
+        <span class="icon">📅</span>
+        <input type="number" id="newAge" placeholder="Age" required>
+      </div>
+      <div class="input-group">
+        <span class="icon">⚧</span>
+        <input type="text" id="newGender" placeholder="Gender" required>
+      </div>
+      <div class="input-group">
+        <span class="icon">📧</span>
+        <input type="email" id="newEmail" placeholder="Enter Email" required>
+      </div>
+      <div class="input-group">
+        <span class="icon">🔒</span>
+        <input type="password" id="newPassword" placeholder="Choose Password" required>
+      </div>
+      <button type="submit" class="login-btn">Register</button>
+      <p class="switch-text">
+        Already have an account? <a href="#" id="showLogin">Login here</a>
+      </p>
+      <div id="registerMessage" class="message"></div>
+    </form>
+  </div>
+
+  <script src="./js/patientlogin.js"></script>
+</body>
+</html>

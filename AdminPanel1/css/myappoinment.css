@@ -1,0 +1,155 @@
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0052cc;
+  color: white;
+  padding: 1rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+.navbar a:last-child {
+  margin-right: 0; /* removes extra space after last item */
+}
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+.logout-btn {
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #d9363e;
+}
+
+/* Headings */
+h1 {
+  margin-top: 40px;
+  color: #007bff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+/* Table Styling */
+table {
+  width: 90%;
+  max-width: 1000px;
+  border-collapse: collapse;
+  margin: 20px auto 40px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+/* Table Header */
+th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Table Cells */
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+/* Alternate Row Colors */
+tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* Row Hover Effect */
+tr:hover {
+  background-color: #e9f2ff;
+  cursor: pointer;
+}
+
+/* Buttons inside table */
+table button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+table button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+/* Status Badges */
+.status {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #fff;
+  display: inline-block;
+}
+
+.status.Pending\ Payment { background-color: #ffc107; color: #212529; }
+.status.Partially\ Paid { background-color: #fd7e14; }
+.status.Pending\ Confirmation { background-color: #17a2b8; }
+.status.Confirmed { background-color: #28a745; }
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  table {
+    width: 95%;
+  }
+
+  th, td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  table button {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+}

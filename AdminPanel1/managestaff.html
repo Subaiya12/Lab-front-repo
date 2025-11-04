@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Staff - Lab Master</title>
+  <link rel="stylesheet" href="./css/managestaff.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Lab Master</h2>
+    <ul>
+      <li><a href="admindashboard.html">Dashboard</a></li>
+      <li><a href="managepatient.html">Manage Patient</a></li>
+      <li><a href="managestaff.html" class="active">Manage Staff</a></li>
+      <li><a href="Test.html">Test Management</a></li>
+      <li><a href="adminappoint.html">Appointment & Scheduling</a></li>
+      <li><a href="reports.html">Sample & Report Management</a></li>
+      <li><a href="billing.html">Billing & Payments</a></li>
+      <li><a href="inventory.html">Inventory Management</a></li>
+      <li><a href="notifications.html">Notification & Communication</a></li>
+      <li><a href="system.html">System</a></li>
+      <li><a href="index.html">Logout</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <h1>Manage Staff</h1>
+      <div class="filter-tabs">
+        <button class="tab-btn active" data-filter="all">All Staff</button>
+        <button class="tab-btn" data-filter="pending">Pending Approval</button>
+        <button class="tab-btn" data-filter="approved">Approved</button>
+      </div>
+    </header>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Qualification</th>
+            <th>Experience</th>
+            <th>Tests Qualified</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="staffList"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Staff Details Modal -->
+  <div id="staffModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Staff Details</h2>
+      <div id="staffDetails"></div>
+    </div>
+  </div>
+
+  <script src="./js/managestaff.js"></script>
+</body>
+</html>

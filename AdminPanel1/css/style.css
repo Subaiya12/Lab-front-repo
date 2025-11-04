@@ -1,0 +1,163 @@
+/* General Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0052cc;
+  color: white;
+  padding: 1rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* spacing between items */
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+.logout-btn {
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: auto; /* Override the width: 100% from the general button style */
+}
+
+.logout-btn:hover {
+  background: #d9363e;
+}
+
+/* Headings */
+h1, h2 {
+  color: #222;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+/* Forms */
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+input, select, button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Tables */
+table {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  background: #fff;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+}
+
+th {
+  background: #007bff;
+  color: white;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+tr:hover {
+  background: #e9f2ff;
+  cursor: pointer;
+}
+
+/* Alerts / Messages */
+.alert {
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 12px;
+  border-radius: 8px;
+  background: #ffecb3;
+  color: #665c00;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  form, table {
+    width: 95%;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
